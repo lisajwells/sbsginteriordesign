@@ -1,0 +1,53 @@
+/// Slightly lighten a color
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// .foo {
+//   color: tint($colorBrightOne, 42%);
+// }
+
+
+$colorBlack: #000;
+$colorBlackAlmost: #222;
+$colorBrightOne: #FF652F;
+$colorBrightOne-lighter: tint($colorBrightOne, 20%);
+$colorBrightTwo: #FFDF53;
+$colorBrightTwo-lighter: tint($colorBrightTwo, 60%);
+$colorBrightTwo-darker: shade($colorBrightTwo, 30%);
+$colorBrightThree: #13A76B;
+$colorBrightThree-lighter: tint($colorBrightThree, 20%);
+$colorWhite: #fff;
+$colorGray: #404040;
+
+$color__background-header: $colorBlack;
+$color__background-body: $colorBlackAlmost;
+$color__text-main: #c3c3c3;
+$color__text-bright: $colorBrightOne;
+$color__background-footer: $colorBlack;
+
+// link in text
+$color__link: $color__text-bright;
+$color__link-visited: $color__text-bright;
+$color__link-hover: $colorBrightThree;
+
+// link in menu
+$color__menu-link: $color__text-bright;
+$color__menu-link-hover: $colorBrightTwo;
+$color__menu-link-focus: $colorBrightTwo;
+
+// buttons
+$color__text-button: $colorBlackAlmost;
+$color__text-button-hover: $colorBlackAlmost;
+$color__text-button-focus: $colorBlackAlmost;
+$color__background-button: $colorBrightOne;
+$color__background-button-hover: $colorBrightOne-lighter;
+$color__background-button-focus: $colorBrightOne-lighter;
+$color__border-button: $colorBrightTwo;
+$color__border-button-hover: $colorBrightThree;
+$color__border-button-focus: $colorBrightThree;

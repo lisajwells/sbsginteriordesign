@@ -1,0 +1,34 @@
+/*--------------------
+>>> TABLE OF CONTENTS:
+----------------------*/
+
+/****** HEADER     ******/
+/****** FRONT-PAGE ******/
+/****** FOOTER     ******/
+/****** ALL PAGES  ******/
+
+/*--------------------*/
+
+body {
+  color: violet;
+  background-color: $color__background-body;
+}
+
+.separate-containers .inside-article {
+  color: $color__text-main;
+}
+
+/****** HEADER ******/
+
+#masthead {
+    z-index: 9999;
+}
+
+/****** FRONT-PAGE ******/
+
+
+/****** CONTACT PAGE ******/
+
+
+/****** ALL PAGES ******/
+

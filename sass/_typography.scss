@@ -1,0 +1,44 @@
+// font-family: 'Palanquin', sans-serif;
+// // light 300
+// font-family: 'Palanquin Dark', sans-serif;
+// // regular 400, semi-bold 600
+
+$font__display: "Palanquin Dark",sans-serif;
+$font__text: "Palanquin",sans-serif;
+
+@mixin display-semi {
+  font-family: $font__display;
+  font-weight: 600;
+}
+@mixin display-regular {
+  font-family: $font__display;
+  font-style: normal;
+  font-weight: 400;
+}
+
+// p {
+//   @include display-regular;
+// }
+
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+// p {
+//   @include font-size(13);
+// }
+
+/* =Global
+----------------------------------------------- */
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Palanquin",sans-serif;
+  font-weight: 300;
+  letter-spacing: .05em;
+  line-height: 1.5;
+}

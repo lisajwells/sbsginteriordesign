@@ -1,0 +1,44 @@
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1024px) {
+
+    /****** HEADER     ******/
+
+    // .main-navigation .main-nav ul li a {
+    //     @include font-size(15);
+    //     padding-left: 8px;
+    //     padding-right: 8px;
+    // }
+
+    // .nav-float-right .inside-header .main-navigation {
+    //     margin-left: -14px;
+    // }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 600px) {
+
+    // .body {
+    //     @include font-size(14);
+    // }
+}
+
+@media (max-width: 440px) {
+
+}
+
+// GeneratePress breakpoints
+// @media (max-width: 768px) {
+    /* CSS in here for mobile only */
+// }
+// @media (min-width: 769px) and (max-width: 1024px) {
+    /* CSS in here for tablet only */
+// }
+// @media (min-width: 1025px) {
+    /* CSS in here for desktop only */
+// }
