@@ -2,6 +2,14 @@
 
 }
 
+// 1280 container needs padding when other elements are maxed
+@media (max-width: 1360px) {
+  .separate-containers .inside-article {
+    max-width: 100%;
+    padding: 40px;
+  }
+}
+
 @media (max-width: 1024px) {
 
 /* White hover captions */
