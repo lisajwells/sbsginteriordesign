@@ -31,3 +31,44 @@ function sbsg_wpautop_filter_control( $content ){
 
 remove_filter( 'the_content', 'wpautop' );
 add_filter( 'the_content', 'sbsg_wpautop_filter_control' );
+
+/**************/////////
+add_shortcode('show_project_child_pages', 'sbsg_show_child_page_thumbs');
+
+function sbsg_show_child_page_thumbs() {
+
+    global $post;
+    $child_pages_query_args = array(
+        'post_type'   => 'page',
+        'post_parent' => $post->ID,
+        'orderby'     => 'date DESC'
+    );
+
+    $child_pages = new WP_Query( $child_pages_query_args );
+
+    if ( $child_pages->have_posts() ) :
+    ?>
+    <ul class="child_page_row">
+    <?php
+    while ( $child_pages->have_posts() ) : $child_pages->the_post();
+        ?>
+        <li><a href="<?php the_permalink(); ?>">
+        <?php if(has_post_thumbnail()): ?>
+            <div class="child_page_thumb">
+                <?php the_post_thumbnail(); ?>
+            </div>
+        <?php endif; ?>
+            <div class="child_page_name">
+                <?php the_title(); ?>
+            </div>
+        </a></li>
+    <?php
+    endwhile;
+    ?>
+    </ul>
+    <?php
+    endif;
+
+    wp_reset_postdata();
+
+}
