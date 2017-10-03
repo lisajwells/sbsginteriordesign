@@ -51,7 +51,8 @@ body {
     margin-right: 0;
 }
 
-.link-to-project-img {
+.link-to-project-img,
+.link-to-project img {
     display: block;
 }
 
@@ -78,4 +79,9 @@ body {
 
 .link-to-project-cap p {
   margin-bottom: 0;
+}
+
+/***** PROJECT PAGES *****/
+.parent-pageid-196 .page-header-image {
+  display: none;
 }

@@ -32,7 +32,7 @@ function sbsg_wpautop_filter_control( $content ){
 remove_filter( 'the_content', 'wpautop' );
 add_filter( 'the_content', 'sbsg_wpautop_filter_control' );
 
-/**************/////////
+/* PROJECTS PAGE */
 // https://studiofreya.com/wordpress/how-to-list-child-pages-with-thumbnails-in-a-wordpress-theme/
 add_shortcode('show_project_child_pages', 'sbsg_show_child_page_thumbs');
 
