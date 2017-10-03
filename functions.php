@@ -55,13 +55,13 @@ function sbsg_show_child_page_thumbs() {
             ?>
             <a class="link-to-project" href="<?php the_permalink(); ?>">
             <?php if(has_post_thumbnail()): ?>
-                <div class="child_page_thumb">
                     <?php the_post_thumbnail(); ?>
-                </div>
             <?php endif; ?>
-                <div class="child_page_name">
+            <div class="link-to-project-cap">
+                <p>
                     <?php the_title(); ?>
-                </div>
+                </p>
+            </div>
             </a>
         <?php
         endwhile;
