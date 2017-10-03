@@ -4,28 +4,29 @@
 
 @media (max-width: 1024px) {
 
-    /****** HEADER     ******/
+/* White hover captions */
+  .link-to-project-cap {
+    height: 26px;
+    opacity: 1;
+    top: auto;
+  }
 
-    // .main-navigation .main-nav ul li a {
-    //     @include font-size(15);
-    //     padding-left: 8px;
-    //     padding-right: 8px;
-    // }
-
-    // .nav-float-right .inside-header .main-navigation {
-    //     margin-left: -14px;
-    // }
 }
 
 @media (max-width: 768px) {
+
+  .link-to-project {
+    flex-basis: 48%;
+  }
 
 }
 
 @media (max-width: 600px) {
 
-    // .body {
-    //     @include font-size(14);
-    // }
+  .link-to-project {
+    flex-basis: 100%;
+  }
+
 }
 
 @media (max-width: 440px) {
