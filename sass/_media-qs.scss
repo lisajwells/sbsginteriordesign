@@ -16,8 +16,15 @@
 @media (max-width: 768px) {
 
   .link-to-project {
-    flex-basis: 48%;
+    flex-basis: 49%;
   }
+  .link-to-project:nth-child(3n) {
+      margin-right: 2%;
+  }
+  .link-to-project:nth-child(2n) {
+      margin-right: 0;
+  }
+
 
 }
 
@@ -25,6 +32,9 @@
 
   .link-to-project {
     flex-basis: 100%;
+  }
+  .link-to-project:nth-child(3n) {
+      margin-right: 0;
   }
 
 }

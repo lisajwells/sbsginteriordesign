@@ -22,7 +22,7 @@ add_filter('metaslider_nivo_slider_javascript', 'metaslider_nivo_js', 10, 2);
 
 /* remove autop from white caption pages */
 function sbsg_wpautop_filter_control( $content ){
-    if ( is_page( array( 'white-caption-on-hover' ) ) ){
+    if ( is_front_page() || is_page( array( 'projects' ) ) ){
         return $content;
     } else {
         return wpautop($content);

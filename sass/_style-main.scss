@@ -36,14 +36,18 @@ body {
 .links-to-projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .link-to-project {
   flex-basis: 32%;
   position: relative;
   margin-bottom: 2%;
-  // flex-grow: 1;
+  margin-right: 2%;
+}
+
+.link-to-project:nth-child(3n) {
+    margin-right: 0;
 }
 
 .link-to-project-img {
