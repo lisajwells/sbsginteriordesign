@@ -34,27 +34,33 @@ body {
 /****** ALL PAGES ******/
 
 /* White hover captions */
-.links-to-projects {
+.links-to-projects,
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2%;
   justify-content: center;
 }
 
-.link-to-project {
+.link-to-project,
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
   flex-basis: 32%;
   position: relative;
   margin-bottom: 2%;
   margin-right: 2%;
+  margin-left: 0;
 }
 
-.link-to-project:nth-child(3n) {
+.link-to-project:nth-child(3n),
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control:nth-child(3n) {
     margin-right: 0;
 }
 
 .link-to-project-img,
-.link-to-project img {
+.link-to-project img,
+.nivo-control img {
     display: block;
+    width: 100%;
 }
 
 .link-to-project-cap {
@@ -83,6 +89,7 @@ body {
 }
 
 /***** PROJECT PAGES *****/
+// hide featured image in favor of slider
 .parent-pageid-196 .page-header-image {
   display: none;
 }

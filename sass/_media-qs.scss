@@ -23,7 +23,8 @@
 
 @media (max-width: 768px) {
 
-  .link-to-project {
+  .link-to-project,
+  .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
     flex-basis: 49%;
   }
   .link-to-project:nth-child(3n) {
@@ -38,7 +39,8 @@
 
 @media (max-width: 600px) {
 
-  .link-to-project {
+  .link-to-project,
+  .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
     flex-basis: 100%;
     margin-right: 0;
   }
