@@ -18,3 +18,15 @@ $('.metaslider a').click(function() {
     return $javascript;
 }
 add_filter('metaslider_nivo_slider_javascript', 'metaslider_nivo_js', 10, 2);
+
+/* remove autop from white caption pages */
+function sbsg_wpautop_filter_control( $content ){
+    if ( is_page( array( 'white-caption-on-hover' ) ) ){
+        return $content;
+    } else {
+        return wpautop($content);
+    }
+}
+
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'sbsg_wpautop_filter_control' );
