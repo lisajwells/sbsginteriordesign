@@ -5,11 +5,12 @@
 // }
 // add_action( 'wp_enqueue_scripts', 'sbsg_enqueue_scripts', 200 );
 
+/* scroll to top of slider when thumbnail clicks */
 function metaslider_nivo_js($javascript, $slider_id) {
     $javascript .= "(function($) {
 $('.metaslider a').click(function() {
     $('html, body').animate({
-        scrollTop: $('#metaslider_container_31').offset().top
+        scrollTop: $('.metaslider').offset().top
     }, 1000);
 });
 })( jQuery );
