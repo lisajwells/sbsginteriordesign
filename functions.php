@@ -33,6 +33,7 @@ remove_filter( 'the_content', 'wpautop' );
 add_filter( 'the_content', 'sbsg_wpautop_filter_control' );
 
 /**************/////////
+// https://studiofreya.com/wordpress/how-to-list-child-pages-with-thumbnails-in-a-wordpress-theme/
 add_shortcode('show_project_child_pages', 'sbsg_show_child_page_thumbs');
 
 function sbsg_show_child_page_thumbs() {
@@ -48,24 +49,24 @@ function sbsg_show_child_page_thumbs() {
 
     if ( $child_pages->have_posts() ) :
     ?>
-    <ul class="child_page_row">
-    <?php
-    while ( $child_pages->have_posts() ) : $child_pages->the_post();
+    <div class="links-to-projects">
+        <?php
+        while ( $child_pages->have_posts() ) : $child_pages->the_post();
+            ?>
+            <a class="link-to-project" href="<?php the_permalink(); ?>">
+            <?php if(has_post_thumbnail()): ?>
+                <div class="child_page_thumb">
+                    <?php the_post_thumbnail(); ?>
+                </div>
+            <?php endif; ?>
+                <div class="child_page_name">
+                    <?php the_title(); ?>
+                </div>
+            </a>
+        <?php
+        endwhile;
         ?>
-        <li><a href="<?php the_permalink(); ?>">
-        <?php if(has_post_thumbnail()): ?>
-            <div class="child_page_thumb">
-                <?php the_post_thumbnail(); ?>
-            </div>
-        <?php endif; ?>
-            <div class="child_page_name">
-                <?php the_title(); ?>
-            </div>
-        </a></li>
-    <?php
-    endwhile;
-    ?>
-    </ul>
+    </div>
     <?php
     endif;
 
