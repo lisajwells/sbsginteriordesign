@@ -11,14 +11,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
     <div class="inside-article">
         <?php do_action( 'generate_before_content' ); ?>
 
-        <div class="entry-content" itemprop="text">
+        <blockquote class="entry-content" itemprop="text">
             <?php the_content(); ?>
-            <?php
-            wp_link_pages( array(
-                'before' => '<div class="page-links">' . __( 'Pages:', 'generatepress' ),
-                'after'  => '</div>',
-            ) );
-            ?>
-        </div><!-- .entry-content -->
+            <cite><strong>—<?php the_field('attribution_name'); ?>,</strong> <?php the_field('attribution_role'); ?></cite>
+        </blockquote><!-- .entry-content -->
     </div><!-- .inside-article -->
 </article><!-- #post-## -->
