@@ -12,7 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         <?php do_action( 'generate_before_content' ); ?>
 
         <blockquote class="entry-content" itemprop="text">
-            <?php the_content(); ?>
+            <?php if ( has_post_thumbnail() ) {
+                the_post_thumbnail();
+            }
+            the_content(); ?>
             <cite><strong>—<?php the_field('attribution_name'); ?>,</strong> <?php the_field('attribution_role'); ?></cite>
         </blockquote><!-- .entry-content -->
     </div><!-- .inside-article -->
