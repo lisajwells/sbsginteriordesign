@@ -14,7 +14,8 @@ get_header(); ?>
 
     <section id="primary" <?php generate_content_class(); ?>>
         <main id="main" <?php generate_main_class(); ?>>
-        <?php do_action('generate_before_main_content'); ?>
+        <?php do_action('generate_before_main_content');
+        remove_action('generate_archive_title','generate_archive_title');?>
         <?php if ( have_posts() ) : ?>
 
             <?php do_action( 'generate_archive_title' ); ?>
