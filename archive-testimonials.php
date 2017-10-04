@@ -16,6 +16,7 @@ get_header(); ?>
         <main id="main" <?php generate_main_class(); ?>>
         <?php do_action('generate_before_main_content');
         remove_action('generate_archive_title','generate_archive_title');?>
+        <h1>Testimonials</h1>
         <?php if ( have_posts() ) : ?>
 
             <?php do_action( 'generate_archive_title' ); ?>
