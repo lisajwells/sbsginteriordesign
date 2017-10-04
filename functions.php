@@ -73,3 +73,14 @@ function sbsg_show_child_page_thumbs() {
     wp_reset_postdata();
 
 }
+
+add_filter( 'generate_blog_masonry','sbsg_testimonials_masonry' );
+function sbsg_testimonials_masonry( $masonry )
+{
+    if ( is_post_type_archive( 'testimonials' ) ) :
+        return 'true';
+    endif;
+
+    return $masonry;
+}
+

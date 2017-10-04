@@ -48,29 +48,3 @@ get_header(); ?>
 <?php
 get_footer();
 
-
-//* Remove the entry title (requires HTML5 theme support)
-//* Add the entry title as attribution to the textimonial
-// remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
-// add_action( 'genesis_entry_footer', 'casa_do_post_title_as_attribution' );
-
-// function casa_do_post_title_as_attribution() {
-
-//     $title = apply_filters( 'genesis_post_title_text', get_the_title() );
-
-//     if ( 0 === mb_strlen( $title ) )
-//         return;
-
-//     // Build the output.
-//     $output = genesis_markup( array(
-//         'open'    => "<cite class='attcontainer'><div class='attborderwrap'><div class='attborderdiv'></div></div><div class='attribution'>",
-//         'close'   => "</div></cite>",
-//         'content' => $title,
-//         'context' => 'entry-title',
-//         'echo'    => false,
-//     ) );
-
-//     echo apply_filters( 'genesis_post_title_output', "$output \n", $title );
-// }
-
-
