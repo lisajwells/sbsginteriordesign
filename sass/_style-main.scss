@@ -10,13 +10,21 @@
 /*--------------------*/
 
 body {
-  color: violet;
   background-color: $color__background-body;
 }
 
 .separate-containers .inside-article {
   color: $color__text-main;
   padding: 0;
+}
+
+blockquote.entry-content {
+    border-left: none;
+    padding: 20px;
+    font-size: 1.2em;
+    font-style: normal;
+    position: relative;
+    margin-top: 0;
 }
 
 /****** HEADER ******/
