@@ -13,6 +13,10 @@ body {
   background-color: $color__background-body;
 }
 
+h1 {
+  text-align: right;
+}
+
 .separate-containers .inside-article {
   color: $color__text-main;
   padding: 0;
@@ -25,6 +29,21 @@ blockquote.entry-content {
     font-style: normal;
     position: relative;
     margin-top: 0;
+}
+
+/****** NAVIGATION ******/
+.main-navigation .main-nav ul li a,
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+    color: $color__menu-link;
+    background-color: $color__background-header;
+    text-transform: uppercase;
+}
+
+.main-navigation .main-nav ul li a:hover,
+.main-navigation .main-nav ul li[class*="current-menu-"] > a,
+.main-navigation .main-nav ul li[class*="current-menu-"] > a:hover {
+    background-color: $color__background-header;
+    color: $color__menu-link-hover;
 }
 
 /****** HEADER ******/
@@ -75,7 +94,9 @@ blockquote.entry-content {
   background: rgba(255,255,255,0.8);
   color: #000;
   display: flex;
+  min-height: 26px;
   opacity: 0;
+  padding: 2px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -93,6 +114,7 @@ blockquote.entry-content {
 }
 
 .link-to-project-cap p {
+  line-height: 1;
   margin-bottom: 0;
 }
 

@@ -17,7 +17,7 @@ $colorBlack: #000;
 $colorBlackAlmost: #222;
 $colorBrightOne: #FF652F;
 $colorBrightOne-lighter: tint($colorBrightOne, 20%);
-$colorBrightTwo: #FFDF53;
+$colorBrightTwo: #ea1b8f;
 $colorBrightTwo-lighter: tint($colorBrightTwo, 60%);
 $colorBrightTwo-darker: shade($colorBrightTwo, 30%);
 $colorBrightThree: #13A76B;
@@ -25,7 +25,7 @@ $colorBrightThree-lighter: tint($colorBrightThree, 20%);
 $colorWhite: #fff;
 $colorGray: #404040;
 
-$color__background-header: $colorBlack;
+$color__background-header: $colorWhite;
 $color__background-body: $colorWhite;
 $color__text-main: #c3c3c3;
 $color__text-bright: $colorBrightOne;
@@ -37,7 +37,7 @@ $color__link-visited: $color__text-bright;
 $color__link-hover: $colorBrightThree;
 
 // link in menu
-$color__menu-link: $color__text-bright;
+$color__menu-link: $colorBlackAlmost;
 $color__menu-link-hover: $colorBrightTwo;
 $color__menu-link-focus: $colorBrightTwo;
 
