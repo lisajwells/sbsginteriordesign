@@ -14,12 +14,28 @@ body {
 }
 
 h1 {
+  color: $colorBlack;
   text-align: right;
+}
+
+.inside-header, .inside-page-header, .one-container .site-content, .separate-containers .comments-area, .separate-containers .inside-article, .separate-containers .page-header, .separate-containers .paging-navigation {
+    padding: 20px 40px;
+}
+
+.entry-content, .entry-summary, .page-content {
+    margin: 0;
 }
 
 .separate-containers .inside-article {
   color: $color__text-main;
   padding: 0;
+}
+
+.separate-containers .inside-left-sidebar,
+.separate-containers .inside-right-sidebar,
+.separate-containers .site-main {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 blockquote.entry-content {
@@ -32,7 +48,14 @@ blockquote.entry-content {
 }
 
 /****** NAVIGATION ******/
-.main-navigation, .main-navigation ul ul {
+.nav-float-right .inside-header .main-navigation {
+    float: right;
+    clear: right;
+    margin-top: 10px;
+}
+
+.main-navigation,
+.main-navigation ul ul {
     background-color: $color__background-header;
 }
 
@@ -50,7 +73,32 @@ blockquote.entry-content {
     color: $color__menu-link-hover;
 }
 
-button.menu-toggle, button.menu-toggle:active, button.menu-toggle:focus, button.menu-toggle:hover {
+/* submenu */
+.main-navigation .main-nav ul ul li a {
+    color: $color__menu-link;
+    background-color: $color__background-header;
+}
+
+.main-navigation .main-nav ul ul li a:hover {
+    color: $color__menu-link-hover;
+}
+
+.main-navigation .main-nav ul ul li > a:hover,
+.main-navigation .main-nav ul ul li > a:focus,
+.main-navigation .main-nav ul ul li.sfHover > a,
+.main-navigation .main-nav ul ul li[class*="current-menu-"] > a,
+.main-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover
+ {
+    background-color: $color__background-header;
+    color: $color__menu-link-hover;
+}
+
+
+/* mobile */
+button.menu-toggle,
+button.menu-toggle:active,
+button.menu-toggle:focus,
+button.menu-toggle:hover {
     background-color: $color__background-header;
     color: $color__menu-link;
 }
@@ -68,6 +116,12 @@ button.menu-toggle, button.menu-toggle:active, button.menu-toggle:focus, button.
 
 
 /****** ALL PAGES ******/
+
+/* PROJECT PAGES individual */
+
+.parent-pageid-196 h1 {
+
+}
 
 /* White hover captions */
 .links-to-projects,
