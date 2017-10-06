@@ -32,6 +32,10 @@ blockquote.entry-content {
 }
 
 /****** NAVIGATION ******/
+.main-navigation, .main-navigation ul ul {
+    background-color: $color__background-header;
+}
+
 .main-navigation .main-nav ul li a,
 .main-navigation .main-nav ul li[class*="current-menu-"] > a {
     color: $color__menu-link;
@@ -44,6 +48,11 @@ blockquote.entry-content {
 .main-navigation .main-nav ul li[class*="current-menu-"] > a:hover {
     background-color: $color__background-header;
     color: $color__menu-link-hover;
+}
+
+button.menu-toggle, button.menu-toggle:active, button.menu-toggle:focus, button.menu-toggle:hover {
+    background-color: $color__background-header;
+    color: $color__menu-link;
 }
 
 /****** HEADER ******/
