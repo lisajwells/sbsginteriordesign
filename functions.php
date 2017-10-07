@@ -8,7 +8,7 @@
 /* scroll to top of slider when thumbnail clicks */
 function metaslider_nivo_js($javascript, $slider_id) {
     $javascript .= "(function($) {
-$('.metaslider a').click(function() {
+$('.metaslider a.nivo-control').click(function() {
     $('html, body').animate({
         scrollTop: $('.metaslider').offset().top
     }, 1000);
