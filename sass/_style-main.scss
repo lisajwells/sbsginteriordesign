@@ -186,3 +186,23 @@ button.menu-toggle:hover {
 .parent-pageid-196 .page-header-image {
   display: none;
 }
+
+// experiment with project page titles
+.page-id-198 .entry-title,
+.page-id-200 .entry-title {
+  display: none;
+}
+
+.page-id-198 .nivo-caption,
+.page-id-200 .nivo-caption {
+    background: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ea1b8f;
+}
+
+.page-id-200 .nivo-caption {
+top:0;
+bottom: auto;
+    text-align: right;
+}
