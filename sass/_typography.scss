@@ -42,7 +42,7 @@ textarea {
 }
 
 body {
-  font-size: 18px;
+  @include font-size(18);
 }
 
 strong {
