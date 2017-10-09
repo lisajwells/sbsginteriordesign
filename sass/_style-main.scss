@@ -2,10 +2,15 @@
 >>> TABLE OF CONTENTS:
 ----------------------*/
 
+/****** NAVIGATION ******/
 /****** HEADER     ******/
 /****** FRONT-PAGE ******/
 /****** FOOTER     ******/
-/****** ALL PAGES  ******/
+/****** PAGES      ******/
+    /* TESTIMONIALS */
+    /* PROJECT PAGES */
+
+
 
 /*--------------------*/
 
@@ -15,7 +20,9 @@ body {
 
 h1 {
   color: $colorBlack;
+  padding-top: 2px;
   text-align: right;
+  @include display-regular;
 }
 
 .inside-header, .inside-page-header, .one-container .site-content, .separate-containers .comments-area, .separate-containers .inside-article, .separate-containers .page-header, .separate-containers .paging-navigation {
@@ -94,6 +101,11 @@ blockquote.entry-content {
 }
 
 
+// make the right side line up desktop
+.inside-navigation {
+    margin-right: -20px;
+}
+
 /* mobile */
 button.menu-toggle,
 button.menu-toggle:active,
@@ -109,19 +121,23 @@ button.menu-toggle:hover {
     z-index: 9999;
 }
 
+.header-image {
+  width: 156px;
+}
+
 /****** FRONT-PAGE ******/
 
 
 /****** CONTACT PAGE ******/
 
 
-/****** ALL PAGES ******/
+/****** PAGES ******/
 
-/*  TESTIMONIALS */
+/* TESTIMONIALS */
 
-.post-type-archive-testimonials h1 {
-  display: none;
-}
+// .post-type-archive-testimonials h1 {
+//   display: none;
+// }
 
 /* PROJECT PAGES individual */
 
@@ -187,28 +203,26 @@ button.menu-toggle:hover {
   margin-bottom: 0;
 }
 
-/***** PROJECT PAGES *****/
+.parent-pageid-196 .entry-content {
+  margin-top: -1.5em;
+}
+
 // hide featured image in favor of slider
 .parent-pageid-196 .page-header-image {
   display: none;
 }
 
-// experiment with project page titles
-.page-id-198 .entry-title,
-.page-id-200 .entry-title {
+// hide project page titles in favor of slider captions
+.parent-pageid-196 .entry-title, {
   display: none;
 }
 
-.page-id-198 .nivo-caption,
-.page-id-200 .nivo-caption {
+.metaslider .nivo-caption {
     background: #fff;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ea1b8f;
+    color: #000;
+    text-transform: uppercase;
 }
-
-.page-id-200 .nivo-caption {
-top:0;
-bottom: auto;
-    text-align: right;
+.parent-pageid-196 .metaslider .nivo-caption:before {
+    color: $colorBrightTwo;
+    content: 'Project: ';
 }

@@ -1,19 +1,24 @@
+// font-family: 'Avenir Pro 85 Heavy'
+// font-family: 'Avenir Pro 35 Light'
+// font-family: 'Avenir Pro 55 Roman'
+// font-family: 'Avenir Pro 65 Medium'
 // font-family: 'Palanquin', sans-serif;
 // // light 300
 // font-family: 'Palanquin Dark', sans-serif;
 // // regular 400, semi-bold 600
 
-$font__display: "Palanquin Dark",sans-serif;
-$font__text: "Palanquin",sans-serif;
+$font__display: "Prata",sans-serif;
+// $font__display: "GFSDidotRegular",sans-serif;
+$font__text: "Scotch Text Light",sans-serif;
 
 @mixin display-semi {
   font-family: $font__display;
-  font-weight: 600;
+  font-weight: normal;
 }
 @mixin display-regular {
   font-family: $font__display;
-  font-style: normal;
-  font-weight: 400;
+  // font-style: normal;
+  font-weight: normal;
 }
 
 // p {
@@ -37,8 +42,8 @@ button,
 input,
 select,
 textarea {
-  font-family: "Palanquin",sans-serif;
-  font-weight: 300;
-  letter-spacing: .05em;
+  font-family: "Scotch Text Light",sans-serif;
+  font-weight: normal;
+  // letter-spacing: .05em;
   line-height: 1.5;
 }

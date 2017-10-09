@@ -74,6 +74,7 @@ function sbsg_show_child_page_thumbs() {
 
 }
 
+// add masonry to custom post type when enabled for blog
 add_filter( 'generate_blog_masonry','sbsg_testimonials_masonry' );
 function sbsg_testimonials_masonry( $masonry )
 {
@@ -83,4 +84,18 @@ function sbsg_testimonials_masonry( $masonry )
 
     return $masonry;
 }
+
+// enqueue google Prata
+function sbsg_add_google_fonts() {
+
+wp_enqueue_style( 'sbsg-google-fonts', 'https://fonts.googleapis.com/css?family=Prata', false );
+wp_enqueue_style( 'sbsg-fontlibrary-fonts', 'https://fontlibrary.org/face/gfs-didot', false );
+}
+
+// font-family: 'GFSDidotRegular';
+//    font-weight: normal;
+//    font-style: normal;
+
+add_action( 'wp_enqueue_scripts', 'sbsg_add_google_fonts' );
+
 
