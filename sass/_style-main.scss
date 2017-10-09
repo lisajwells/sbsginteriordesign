@@ -154,6 +154,11 @@ button.menu-toggle:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  align-items: center;
+}
+
+.relationship-logos .fl-module-content.fl-node-content p {
+    margin-bottom: 0;
 }
 
 .relationship-logos .fl-col-content .fl-module img {
