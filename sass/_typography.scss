@@ -9,7 +9,7 @@
 
 $font__display: "Prata",sans-serif;
 // $font__display: "GFSDidotRegular",sans-serif;
-$font__text: "Scotch Text Light",sans-serif;
+$font__text: "AvenirLTStd-Light",sans-serif;
 
 @mixin display-semi {
   font-family: $font__display;
@@ -42,10 +42,13 @@ button,
 input,
 select,
 textarea {
-  font-family: "Scotch Text Light",sans-serif;
+  font-family: AvenirLTStd-Light;
   font-weight: normal;
-  // letter-spacing: .05em;
-  line-height: 1.5;
+  font-style: normal;
+}
+
+body {
+  font-size: 18px;
 }
 
 strong {

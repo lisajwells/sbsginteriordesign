@@ -88,8 +88,9 @@ function sbsg_testimonials_masonry( $masonry )
 // enqueue google Prata
 function sbsg_add_google_fonts() {
 
-wp_enqueue_style( 'sbsg-google-fonts', 'https://fonts.googleapis.com/css?family=Prata', false );
-wp_enqueue_style( 'sbsg-fontlibrary-fonts', 'https://fontlibrary.org/face/gfs-didot', false );
+    wp_enqueue_style( 'sbsg-google-fonts', 'https://fonts.googleapis.com/css?family=Prata', false );
+    wp_enqueue_style( 'sbsg-fontlibrary-fonts', 'https://fontlibrary.org/face/gfs-didot', false );
+    wp_enqueue_style( 'sbsg-myfonts-fonts', get_stylesheet_directory_uri() . "/webfonts/MyFontsWebfontsKit.css", false );
 }
 
 // font-family: 'GFSDidotRegular';
