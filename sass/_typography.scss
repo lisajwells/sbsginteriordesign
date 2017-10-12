@@ -1,14 +1,8 @@
-// font-family: 'Avenir Pro 85 Heavy'
-// font-family: 'Avenir Pro 35 Light'
-// font-family: 'Avenir Pro 55 Roman'
-// font-family: 'Avenir Pro 65 Medium'
-// font-family: 'Palanquin', sans-serif;
-// // light 300
-// font-family: 'Palanquin Dark', sans-serif;
-// // regular 400, semi-bold 600
+// font-family: AvenirLTStd-Light;
+// font-weight: normal;
+// font-style: normal;
 
 $font__display: "Prata",sans-serif;
-// $font__display: "GFSDidotRegular",sans-serif;
 $font__text: "AvenirLTStd-Light",sans-serif;
 
 @mixin display-semi {
@@ -45,6 +39,10 @@ textarea {
   font-family: AvenirLTStd-Light;
   font-weight: normal;
   font-style: normal;
+}
+
+body {
+  @include font-size(18);
 }
 
 strong {
