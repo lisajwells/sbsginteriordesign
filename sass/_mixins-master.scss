@@ -2,14 +2,16 @@
 // set html so 1 rem is 10px
 html { font-size: 62.5%}
 
-@mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
+@mixin font-size($sizeValue: 18, $heightValue: 1.5) {
+  font-size: $sizeValue + px; //fallback for old browsers
+  line-height: ($sizeValue * $heightValue) + px;
+  font-size: ($sizeValue * 0.1) + rem;
+  line-height: (($sizeValue * 0.1) * $heightValue) + rem;
 }
 
 // to use:
 // p {
-//   @include font-size(13);
+//   @include font-size(13, 1.4); // line-height is optional
 // }
 
 // Center block
