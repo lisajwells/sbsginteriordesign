@@ -10,7 +10,7 @@ function metaslider_nivo_js($javascript, $slider_id) {
     $javascript .= "(function($) {
 $('.metaslider a.nivo-control').click(function() {
     $('html, body').animate({
-        scrollTop: $('.metaslider').offset().top
+        scrollTop: $('.metaslider').offset().top -123
     }, 1000);
 });
 })( jQuery );
