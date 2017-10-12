@@ -90,6 +90,8 @@ function sbsg_home_project_thumbs() {
 
     $child_pages = new WP_Query( $child_pages_query_args );
 
+    echo do_shortcode("[metaslider id=144]");
+
     if ( $child_pages->have_posts() ) :
     ?>
     <div class="links-to-projects">
