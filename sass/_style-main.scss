@@ -128,30 +128,6 @@ button.menu-toggle:hover {
 /****** FRONT-PAGE ******/
 
 
-/****** FOOTER ******/
-
-.footer-widgets {
-  padding-bottom: 0;
-}
-
-.footer-widget-1 {
-  text-align: center;
-}
-
-.footer-widget-1 img {
-    max-width: 100px;
-}
-
-.footer-widget-1 p {
-  @include font-size(15, 1.4);
-  margin-top: -20px;
-}
-
-.footer-widget-1 .fa {
-  margin: 0 .3em;
-  color: #000;
-}
-
 /****** CONTACT PAGE ******/
 
 
@@ -178,11 +154,6 @@ button.menu-toggle:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  align-items: center;
-}
-
-.relationship-logos .fl-module-content.fl-node-content p {
-    margin-bottom: 0;
 }
 
 .relationship-logos .fl-col-content .fl-module img {
@@ -190,7 +161,7 @@ button.menu-toggle:hover {
 }
 
 .relationship-logos .fl-col-content .fl-module {
-  flex-basis: 33%;
+  flex-basis: 30%;
   // flex-grow: 1;
 }
 .relationship-logos .fl-col-content .fl-module.two-thirds {
@@ -214,7 +185,7 @@ button.menu-toggle:hover {
 }
 
 .links-to-projects {
-  margin-top: 2%;
+  margin-top: 0;
 }
 
 .link-to-project,
