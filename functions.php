@@ -41,8 +41,7 @@ function sbsg_show_child_page_thumbs() {
     global $post;
     $child_pages_query_args = array(
         'post_type'   => 'page',
-        'post_parent' => 196, // projects page
-        // 'post_parent' => $post->ID,
+        'post_parent' => $post->ID,
         'orderby'     => 'date DESC'
     );
 
