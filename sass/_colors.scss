@@ -14,27 +14,22 @@
 
 
 $colorBlack: #000;
-$colorBlackAlmost: #222;
-$colorBrightOne: #FF652F;
-$colorBrightOne-lighter: tint($colorBrightOne, 20%);
+$colorBlackAlmost: #3a3a3a;
 $colorBrightTwo: #ea1b8f;
 $colorBrightTwo-lighter: tint($colorBrightTwo, 60%);
 $colorBrightTwo-darker: shade($colorBrightTwo, 30%);
-$colorBrightThree: #13A76B;
-$colorBrightThree-lighter: tint($colorBrightThree, 20%);
 $colorWhite: #fff;
 $colorGray: #404040;
 
 $color__background-header: $colorWhite;
 $color__background-body: $colorWhite;
-$color__text-main: #000;
-$color__text-bright: $colorBrightOne;
-$color__background-footer: $colorBlack;
+$color__text-main: $colorBlackAlmost;
+$color__background-footer: $colorWhite;
 
 // link in text
-$color__link: $color__text-bright;
-$color__link-visited: $color__text-bright;
-$color__link-hover: $colorBrightThree;
+$color__link: $colorBrightTwo;
+$color__link-visited: $colorBlackAlmost;
+$color__link-hover: $colorBrightTwo;
 
 // link in menu
 $color__menu-link: $colorBlackAlmost;
@@ -42,12 +37,12 @@ $color__menu-link-hover: $colorBrightTwo;
 $color__menu-link-focus: $colorBrightTwo;
 
 // buttons
-$color__text-button: $colorBlackAlmost;
-$color__text-button-hover: $colorBlackAlmost;
-$color__text-button-focus: $colorBlackAlmost;
-$color__background-button: $colorBrightOne;
-$color__background-button-hover: $colorBrightOne-lighter;
-$color__background-button-focus: $colorBrightOne-lighter;
+$color__text-button: $colorWhite;
+$color__text-button-hover: $colorWhite;
+$color__text-button-focus: $colorWhite;
+$color__background-button: $colorBrightTwo;
+$color__background-button-hover: $colorBlack;
+$color__background-button-focus: $colorBlack;
 $color__border-button: $colorBrightTwo;
-$color__border-button-hover: $colorBrightThree;
-$color__border-button-focus: $colorBrightThree;
+$color__border-button-hover: $colorBlack;
+$color__border-button-focus: $colorBlack;
