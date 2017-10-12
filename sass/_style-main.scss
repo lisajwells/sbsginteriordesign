@@ -100,13 +100,22 @@ blockquote.entry-content {
     color: $color__menu-link-hover;
 }
 
+// indent projects in dropdown
+#menu-item-234 .sub-menu li a {
+    padding-left: 30px;
+}
+
+#menu-item-234 .sub-menu li:first-child a,
+#menu-item-234 .sub-menu li:last-child a {
+    padding-left: 20px;
+}
 
 // make the right side line up desktop
 .inside-navigation {
     margin-right: -20px;
 }
 
-/* mobile */
+/*++ mobile ++*/
 button.menu-toggle,
 button.menu-toggle:active,
 button.menu-toggle:focus,
@@ -151,9 +160,6 @@ button.menu-toggle:hover {
   margin: 0 .3em;
   color: #000;
 }
-
-/****** CONTACT PAGE ******/
-
 
 /****** PAGES ******/
 
@@ -289,3 +295,6 @@ button.menu-toggle:hover {
     color: $colorBrightTwo;
     content: 'Project: ';
 }
+
+/****** CONTACT PAGE ******/
+
