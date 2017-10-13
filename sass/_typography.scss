@@ -1,23 +1,11 @@
 // font-family: AvenirLTStd-Light;
+// font-family: AvenirLTStd-Medium;
+// font-family: DietDidot;
 // font-weight: normal;
 // font-style: normal;
 
-$font__display: "Prata",sans-serif;
+$font__display: "AvenirLTStd-Medium",sans-serif;
 $font__text: "AvenirLTStd-Light",sans-serif;
-
-@mixin display-semi {
-  font-family: $font__display;
-  font-weight: normal;
-}
-@mixin display-regular {
-  font-family: $font__display;
-  // font-style: normal;
-  font-weight: normal;
-}
-
-// p {
-//   @include display-regular;
-// }
 
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
@@ -36,7 +24,7 @@ button,
 input,
 select,
 textarea {
-  font-family: AvenirLTStd-Light;
+  font-family: "AvenirLTStd-Light",sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -46,5 +34,5 @@ body {
 }
 
 strong {
-  font-family: "Scotch Text Semi Bold",sans-serif;
+  font-family: "AvenirLTStd-Medium",sans-serif;
 }
