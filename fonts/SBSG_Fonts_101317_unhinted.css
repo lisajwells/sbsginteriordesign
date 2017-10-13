@@ -1,0 +1,44 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3463812, 2017-10-13T10:51:10-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: DietDidot by ParaType
+ * URL: https://www.myfonts.com/fonts/paratype/diet-didot/regular/
+ * Copyright: Copyright (c) 2006 by Double Alex Font Studio. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: AvenirLTStd-Medium by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/65-medium/
+ * Copyright: Copyright &#x00A9; 1981 - 2006 Linotype GmbH, www.linotype.com. All rights reserved. Copyright &#x00A9; 1989 - 2002 Adobe Systems Incorporated.  All Rights Reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: AvenirLTStd-Light by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/35-light/
+ * Copyright: Copyright &#x00A9; 1989, 1995, 2002 Adobe Systems Incorporated.  All Rights Reserved. &#x00A9; 1981, 1995, 2002 Heidelberger Druckmaschinen AG. All rights reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3463812
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/34da84");
+
+  
+@font-face {font-family: 'DietDidot';src:url('webfonts/34DA84_0_unhinted_0.woff2') format('woff2'),url('webfonts/34DA84_0_unhinted_0.woff') format('woff'),url('webfonts/34DA84_0_unhinted_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTStd-Medium';src:url('webfonts/34DA84_1_unhinted_0.woff2') format('woff2'),url('webfonts/34DA84_1_unhinted_0.woff') format('woff'),url('webfonts/34DA84_1_unhinted_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTStd-Light';src:url('webfonts/34DA84_2_unhinted_0.woff2') format('woff2'),url('webfonts/34DA84_2_unhinted_0.woff') format('woff'),url('webfonts/34DA84_2_unhinted_0.ttf') format('truetype');}
+ 

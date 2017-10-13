@@ -169,13 +169,12 @@ function sbsg_testimonials_masonry( $masonry )
     return $masonry;
 }
 
-// enqueue google Prata
-function sbsg_add_google_fonts() {
+// enqueue webfonts
+function sbsg_add_myfont_fonts() {
 
-    wp_enqueue_style( 'sbsg-google-fonts', 'https://fonts.googleapis.com/css?family=Prata', false );
-    wp_enqueue_style( 'sbsg-myfonts-fonts', get_stylesheet_directory_uri() . "/webfonts/MyFontsWebfontsKit.css", false );
+    wp_enqueue_style( 'sbsg-myfonts-fonts', get_stylesheet_directory_uri() . "/fonts/SBSG_Fonts_101317.css", false );
 }
 
-add_action( 'wp_enqueue_scripts', 'sbsg_add_google_fonts' );
+add_action( 'wp_enqueue_scripts', 'sbsg_add_myfont_fonts' );
 
 
