@@ -69,6 +69,7 @@ blockquote.entry-content {
     float: right;
     clear: right;
     margin-top: 10px;
+    font-family: "AvenirLTStd-Medium";
 }
 
 .main-navigation,
@@ -110,14 +111,18 @@ blockquote.entry-content {
     color: $color__menu-link-hover;
 }
 
-// indent projects in dropdown
+// indent projects in dropdown and don't bold them
 #menu-item-234 .sub-menu li a {
     padding-left: 30px;
+        font-family: "AvenirLTStd-Light";
+
 }
 
 #menu-item-234 .sub-menu li:first-child a,
 #menu-item-234 .sub-menu li:last-child a {
     padding-left: 20px;
+        font-family: "AvenirLTStd-Medium";
+
 }
 
 // make the right side line up desktop
@@ -183,6 +188,10 @@ button.menu-toggle:hover {
 // .post-type-archive-testimonials h1 {
 //   display: none;
 // }
+
+cite {
+    font-style: normal;
+}
 
 /* RELATIONSHIPS */
 .page-id-273 .entry-title {
