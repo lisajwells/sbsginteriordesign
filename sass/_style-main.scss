@@ -64,19 +64,16 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
-blockquote.entry-content {
-    border-left: none;
-    padding: 20px;
-    font-size: 1.2em;
-    font-style: normal;
-    position: relative;
-    margin-top: 0;
-}
-
 /****** CONTAINERS ******/
 // beaver builder pages should allow 16px extra to compensate for module margins
 .page-id-275 #page { // contact page
     max-width: 1312px;
+}
+.post-type-archive-testimonials #page {
+    max-width: 1360px;
+}
+.post-type-archive-testimonials h1 {
+    padding-right: 40px;
 }
 
 /****** NAVIGATION ******/
@@ -203,6 +200,27 @@ button.menu-toggle:hover {
 // .post-type-archive-testimonials h1 {
 //   display: none;
 // }
+
+blockquote.entry-content {
+    border-left: none;
+    padding: 40px;
+    font-size: 1.2em;
+    font-style: normal;
+    position: relative;
+    margin-top: 0;
+}
+
+blockquote p {
+    margin-bottom: 1em;
+}
+
+blockquote p:last-of-type {
+    margin-bottom: .6em;
+}
+
+blockquote img {
+    margin-bottom: .6em;
+}
 
 cite {
     font-style: normal;
