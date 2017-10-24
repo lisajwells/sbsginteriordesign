@@ -52,6 +52,10 @@
     clear: both;
     margin-top: -10px;
   }
+  .inside-header {
+    max-width: 100%;
+    padding: 40px 40px 0;
+  }
   h1 {
     @include font-size(36);
   }
