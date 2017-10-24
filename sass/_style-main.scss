@@ -351,7 +351,8 @@ cite {
     color: #000;
     text-transform: uppercase;
 }
-.parent-pageid-196 .metaslider .nivo-caption:before {
+.parent-pageid-196 .metaslider .nivo-caption:before,
+.home .metaslider .nivo-caption:before {
     color: $colorBrightTwo;
     content: 'Project: ';
 }
