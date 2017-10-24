@@ -41,6 +41,21 @@
 
 @media (max-width: 768px) {
 
+  .site-logo {
+    display: block;
+  }
+  .header-image {
+    width: 130px;
+  }
+  .nav-float-right .inside-header .main-navigation {
+    float: none;
+    clear: both;
+    margin-top: -10px;
+  }
+  h1 {
+    @include font-size(36);
+  }
+
   .link-to-project,
   .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
     flex-basis: 49%;
@@ -50,6 +65,15 @@
   }
   .link-to-project:nth-child(2n) {
       margin-right: 0;
+  }
+
+  blockquote.entry-content {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  .post-type-archive-testimonials h1 {
+      padding: 0 20px;
+      text-align: left;
   }
 
 

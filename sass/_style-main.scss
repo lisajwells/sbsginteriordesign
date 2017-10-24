@@ -120,8 +120,7 @@ h2, h3, h4, h5, h6 {
 .main-navigation .main-nav ul ul li > a:focus,
 .main-navigation .main-nav ul ul li.sfHover > a,
 .main-navigation .main-nav ul ul li[class*="current-menu-"] > a,
-.main-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover
- {
+.main-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover {
     background-color: $color__background-header;
     color: $color__menu-link-hover;
 }
@@ -129,20 +128,21 @@ h2, h3, h4, h5, h6 {
 // indent projects in dropdown and don't bold them
 #menu-item-234 .sub-menu li a {
     padding-left: 30px;
-        font-family: "AvenirLTStd-Light";
-
+    font-family: "AvenirLTStd-Light";
 }
 
 #menu-item-234 .sub-menu li:first-child a,
 #menu-item-234 .sub-menu li:last-child a {
     padding-left: 20px;
-        font-family: "AvenirLTStd-Medium";
-
+    font-family: "AvenirLTStd-Medium";
 }
 
 // make the right side line up desktop
 .inside-navigation {
-    margin-right: -20px;
+    // margin-right: -20px;
+}
+.main-navigation .main-nav ul li:last-of-type a, .main-navigation .main-nav ul li[class*="current-menu-"]:last-of-type > a {
+    padding-right: 0;
 }
 
 /*++ mobile ++*/
