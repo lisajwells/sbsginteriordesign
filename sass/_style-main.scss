@@ -14,6 +14,14 @@
 
 /*--------------------*/
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: $color__background-body;
 }
@@ -36,7 +44,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .inside-header, .inside-page-header, .one-container .site-content, .separate-containers .comments-area, .separate-containers .inside-article, .separate-containers .page-header, .separate-containers .paging-navigation {
-    padding: 20px 40px;
+    padding: 20px 0;
 }
 
 .entry-content, .entry-summary, .page-content {
@@ -322,3 +330,11 @@ cite {
 
 /****** CONTACT PAGE ******/
 
+.nf-form-fields-required {
+  display: none;
+}
+
+.label-above .field-wrap .nf-field-label {
+    font-size: .9em;
+    margin-bottom: 0;
+}
