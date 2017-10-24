@@ -10,7 +10,7 @@
   }
   .separate-containers .inside-article {
     max-width: 100%;
-    padding: 40px;
+    padding: 0 40px;
   }
   // .page-id-267 .inside-article,  // about
   // .page-id-269 .inside-article,  // services
@@ -56,8 +56,9 @@
     max-width: 100%;
     padding: 40px 40px 0;
   }
-  h1 {
-    @include font-size(36);
+  h1, h1.entry-title {
+    @include font-size(40);
+    text-align: left;
   }
 
   .link-to-project,
@@ -79,6 +80,10 @@
       padding: 0 20px;
       text-align: left;
   }
+  .parent-pageid-196 .metaslider .nivo-caption:before {
+    content: '';
+  }
+
 
 
 }
