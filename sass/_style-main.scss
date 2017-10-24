@@ -2,6 +2,7 @@
 >>> TABLE OF CONTENTS:
 ----------------------*/
 
+/****** CONTAINERS ******/
 /****** NAVIGATION ******/
 /****** HEADER     ******/
 /****** FRONT-PAGE ******/
@@ -70,6 +71,12 @@ blockquote.entry-content {
     font-style: normal;
     position: relative;
     margin-top: 0;
+}
+
+/****** CONTAINERS ******/
+// beaver builder pages should allow 16px extra to compensate for module margins
+.page-id-275 #page { // contact page
+    max-width: 1312px;
 }
 
 /****** NAVIGATION ******/
