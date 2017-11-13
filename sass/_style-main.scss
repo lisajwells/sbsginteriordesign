@@ -252,6 +252,10 @@ cite {
     font-style: normal;
 }
 
+.fl-rich-text p:last-of-type {
+  margin-bottom: 0;
+}
+
 /* RELATIONSHIPS */
 .page-id-273 .entry-title {
   display: none;
@@ -391,4 +395,8 @@ cite {
 .label-above .field-wrap .nf-field-label {
     font-size: .9em;
     margin-bottom: 0;
+}
+
+.credit {
+  @include font-size(15, 1.4);
 }
