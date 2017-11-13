@@ -16,7 +16,7 @@
 
   .separate-containers .inside-article {
     max-width: 100%;
-    padding: 0 40px;
+    // padding: 0 40px;
   }
 
   .post-type-archive-testimonials .inside-article {  // testimonials
@@ -94,11 +94,8 @@
   .link-to-project,
   .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
     flex-basis: 100%;
-    margin-right: 0;
-  }
-
-  .link-to-project:nth-child(3n) {
-      margin-right: 0;
+    margin: 1%;
+    margin-bottom: 3%;
   }
 
 }
