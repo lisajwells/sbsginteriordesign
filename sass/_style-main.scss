@@ -44,11 +44,19 @@ h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
-.inside-header, .inside-page-header, .one-container .site-content, .separate-containers .comments-area, .separate-containers .inside-article, .separate-containers .page-header, .separate-containers .paging-navigation {
+.inside-header,
+.inside-page-header,
+.one-container .site-content,
+.separate-containers .comments-area,
+.separate-containers .inside-article,
+.separate-containers .page-header,
+.separate-containers .paging-navigation {
     padding: 20px 0;
 }
 
-.entry-content, .entry-summary, .page-content {
+.entry-content,
+.entry-summary,
+.page-content {
     margin: 0;
 }
 
@@ -141,7 +149,8 @@ h2, h3, h4, h5, h6 {
 .inside-navigation {
     // margin-right: -20px;
 }
-.main-navigation .main-nav ul li:last-of-type a, .main-navigation .main-nav ul li[class*="current-menu-"]:last-of-type > a {
+.main-navigation .main-nav ul li:last-of-type a,
+.main-navigation .main-nav ul li[class*="current-menu-"]:last-of-type > a {
     padding-right: 0;
 }
 
@@ -275,8 +284,9 @@ cite {
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1%;
   justify-content: center;
+  margin: 0 -1%;
+  width: 102% !important;
 }
 
 .links-to-projects {
@@ -285,16 +295,17 @@ cite {
 
 .link-to-project,
 .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
-  flex-basis: 32%;
+  flex-basis: 31.333%;
   position: relative;
-  margin-bottom: 2%;
-  margin-right: 2%;
-  margin-left: 0;
+  margin: 1%;
+  // margin-bottom: 2%;
+  // margin-right: 2%;
+  // margin-left: 0;
 }
 
 .link-to-project:nth-child(3n),
 .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control:nth-child(3n) {
-    margin-right: 0;
+    // margin-right: 0;
 }
 
 .link-to-project-img,
