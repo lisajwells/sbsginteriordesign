@@ -74,15 +74,18 @@ h2, h3, h4, h5, h6 {
 
 /****** CONTAINERS ******/
 // beaver builder pages should allow 16px extra to compensate for module margins
-.page-id-275 #page { // contact page
+.page-template-beaver #page {
     max-width: 1312px;
 }
+
 .post-type-archive-testimonials #page {
     max-width: 1360px;
 }
+
 .post-type-archive-testimonials h1 {
     padding-right: 40px;
 }
+
 .masonry-container {
     margin-left: 0;
 }
