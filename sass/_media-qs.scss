@@ -8,25 +8,22 @@
     max-width: 100%;
     padding: 40px;
   }
+
+  .page-template-beaver #page {
+    max-width: 1280px;
+    padding: 0 24px;
+  }
+
   .separate-containers .inside-article {
     max-width: 100%;
     padding: 0 40px;
   }
-  // .page-id-267 .inside-article,  // about
-  // .page-id-269 .inside-article,  // services
-  .page-id-275 .inside-article { // contact
-    padding: 0;
-  }
+
   .post-type-archive-testimonials .inside-article {  // testimonials
     padding: 0;
     margin: 0;
-
   }
 
-  // .post-type-archive-testimonials .inside-article,  // testimonials
-  .page-id-275 #page { // contact page
-      // padding: 0 24px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -56,6 +53,7 @@
     max-width: 100%;
     padding: 40px 40px 0;
   }
+
   h1, h1.entry-title {
     @include font-size(40);
     text-align: left;
@@ -63,29 +61,31 @@
 
   .link-to-project,
   .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
-    flex-basis: 49%;
+    flex-basis: 48%;
   }
-  .link-to-project:nth-child(3n) {
-      margin-right: 2%;
-  }
-  .link-to-project:nth-child(2n) {
-      margin-right: 0;
-  }
+
+  // .link-to-project:nth-child(3n) {
+  //     margin-right: 2%;
+  // }
+
+  // .link-to-project:nth-child(2n) {
+  //     margin-right: 0;
+  // }
 
   blockquote.entry-content {
     padding: 10px 20px;
     font-size: 1em;
   }
+
   .post-type-archive-testimonials h1 {
       padding: 0 20px;
       text-align: left;
   }
+
   .home .metaslider .nivo-caption:before,
   .parent-pageid-196 .metaslider .nivo-caption:before {
     content: '';
   }
-
-
 
 }
 
@@ -96,6 +96,7 @@
     flex-basis: 100%;
     margin-right: 0;
   }
+
   .link-to-project:nth-child(3n) {
       margin-right: 0;
   }
@@ -116,3 +117,6 @@
 // @media (min-width: 1025px) {
     /* CSS in here for desktop only */
 // }
+
+// Beaver breakpoints
+// 992 and 768
