@@ -73,46 +73,6 @@ function sbsg_show_child_page_thumbs() {
     wp_reset_postdata();
 }
 
-/* HOME PAGE */
-add_shortcode('show_home_project_thumbs', 'sbsg_home_show_project_thumbs');
-
-function sbsg_home_show_project_thumbs() {
-
-    global $post;
-    $projects_query_args = array(
-        'post_type'   => 'page',
-        'post_parent' => 196,
-        // 'post_parent' => $post->ID,
-        'orderby'     => 'date DESC'
-    );
-
-    $projects = new WP_Query( $projects_query_args );
-
-    if ( $projects->have_posts() ) :
-    ?>
-    <div class="links-to-projects">
-        <?php
-        while ( $projects->have_posts() ) : $projects->the_post();
-            ?>
-            <a class="link-to-project" href="<?php the_permalink(); ?>">
-                <?php if(has_post_thumbnail()): ?>
-                        <?php the_post_thumbnail(); ?>
-                <?php endif; ?>
-            <div class="link-to-project-cap">
-                <p>
-                    <?php the_title(); ?>
-                </p>
-            </div>
-            </a>
-        <?php
-        endwhile;
-        ?>
-    </div>
-    <?php
-    endif;
-
-    wp_reset_postdata();
-}
 
 /* HOME PAGE */
 add_shortcode('show_home_project_thumbs', 'sbsg_home_project_thumbs');
