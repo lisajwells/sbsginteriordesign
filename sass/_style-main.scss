@@ -73,6 +73,12 @@ h2, h3, h4, h5, h6 {
 }
 
 /****** CONTAINERS ******/
+
+// defeat horizontal scrollbars when using neg margin
+#page {
+  overflow: hidden;
+}
+
 // beaver builder pages should allow 16px extra to compensate for module margins
 .page-template-beaver #page {
     max-width: 1312px;
@@ -293,7 +299,7 @@ cite {
 }
 
 .links-to-projects {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .link-to-project,
