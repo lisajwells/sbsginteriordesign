@@ -14,6 +14,17 @@
     padding: 0 24px;
   }
 
+  // before-after page should reach edge
+  .page-template-beaver.page-id-265 #page {
+    padding: 0;
+  }
+
+  .page-template-beaver.page-id-265 #page .entry-title {
+    padding: 0 24px;
+    text-align: center;
+    margin: 0;
+  }
+
   .separate-containers .inside-article {
     max-width: 100%;
     // padding: 0 40px;
@@ -61,6 +72,7 @@
 
   h1, h1.entry-title {
     @include font-size(40);
+    line-height: 1;
     text-align: left;
   }
 
@@ -83,6 +95,11 @@
   .home .metaslider .nivo-caption:before,
   .parent-pageid-196 .metaslider .nivo-caption:before {
     content: '';
+  }
+
+  // center before-afters when they're 1col
+  .page-id-265 .fl-photo-content.fl-photo-img-jpg {
+    text-align: center;
   }
 
 }
