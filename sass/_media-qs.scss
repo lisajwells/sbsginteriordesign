@@ -16,13 +16,8 @@
 
   // before-after page should reach edge
   .page-template-beaver.page-id-265 #page {
+    // max-width: 1360px;
     padding: 0;
-  }
-
-  .page-template-beaver.page-id-265 #page .entry-title {
-    padding: 0 24px;
-    text-align: center;
-    margin: 0;
   }
 
   .separate-containers .inside-article {
@@ -97,10 +92,28 @@
     content: '';
   }
 
+  .page-template-beaver.page-id-265 #page h1.entry-title {
+    padding: 0 24px;
+    text-align: center;
+    margin: 0;
+  }
+
+
+}
+
+@media (max-width: 640px) {
+
   // center before-afters when they're 1col
   .page-id-265 .fl-photo-content.fl-photo-img-jpg {
     text-align: center;
   }
+
+  .page-id-265 .fl-col-small {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+
 
 }
 
