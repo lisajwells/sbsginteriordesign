@@ -113,6 +113,16 @@
     width: 100% !important;
   }
 
+  // remove top marg from every photo module
+  .page-id-265 .fl-col-small .fl-module-content.fl-node-content {
+    margin-top: 0;
+  }
+
+  // add top marg to every photo group
+  .page-id-265 .fl-col-group {
+    margin-top: 30px;
+  }
+
 
 
 }
