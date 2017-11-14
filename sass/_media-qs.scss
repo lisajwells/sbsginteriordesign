@@ -20,6 +20,10 @@
     padding: 0;
   }
 
+  .page-template-beaver.page-id-265 .entry-header h1 {
+    padding: 0 40px;
+  }
+
   .separate-containers .inside-article {
     max-width: 100%;
     // padding: 0 40px;
@@ -102,6 +106,7 @@
 }
 
 @media (max-width: 640px) {
+  /*** BEFORE-AFTER PAGE images are 640 wide ***/
 
   // center before-afters when they're 1col
   .page-id-265 .fl-photo-content.fl-photo-img-jpg {
