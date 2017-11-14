@@ -34,6 +34,11 @@
     top: auto;
   }
 
+  .link-to-project,
+  .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
+    margin: 1rem 1%;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -62,15 +67,8 @@
   .link-to-project,
   .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
     flex-basis: 48%;
+    margin: .8rem 1%;
   }
-
-  // .link-to-project:nth-child(3n) {
-  //     margin-right: 2%;
-  // }
-
-  // .link-to-project:nth-child(2n) {
-  //     margin-right: 0;
-  // }
 
   blockquote.entry-content {
     padding: 10px 20px;
@@ -94,8 +92,8 @@
   .link-to-project,
   .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
     flex-basis: 100%;
-    margin: 1%;
-    margin-bottom: 3%;
+    margin: .8rem 1%;
+    margin-bottom: 1rem;
   }
 
 }

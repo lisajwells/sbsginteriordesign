@@ -315,10 +315,7 @@ cite {
 .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
   flex-basis: 31.333%;
   position: relative;
-  margin: 1.4rem 1%;
-  // margin-bottom: 2%;
-  // margin-right: 2%;
-  // margin-left: 0;
+  margin: 1.4rem 1%; // use rem because FF collapses margins
 }
 
 .link-to-project:nth-child(3n),
