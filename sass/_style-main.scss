@@ -32,8 +32,7 @@ h1 {
   font-family: DietDidot;
   font-weight: normal;
   font-style: normal;
-    font-size: 48px;
-
+  font-size: 48px;
   padding-top: 2px;
   text-align: right;
 }
@@ -42,6 +41,10 @@ h2, h3, h4, h5, h6 {
   font-family:  "AvenirLTStd-Medium",sans-serif;
   font-weight: normal;
   font-style: normal;
+}
+
+.fl-rich-text h3 {
+    margin-bottom: 10px;
 }
 
 .inside-header,
