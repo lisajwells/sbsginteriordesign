@@ -41,7 +41,8 @@ function sbsg_show_child_page_thumbs() {
     $child_pages_query_args = array(
         'post_type'   => 'page',
         'post_parent' => $post->ID,
-        'orderby'     => 'date DESC'
+        'orderby'     => 'menu_order',
+        'order' => 'ASC'
     );
 
     $child_pages = new WP_Query( $child_pages_query_args );
