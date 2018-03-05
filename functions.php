@@ -83,7 +83,8 @@ function sbsg_home_project_thumbs() {
         'post_type'   => 'page',
         'post_parent' => 196,
         // 'post_parent' => $post->ID,
-        'orderby'     => 'date DESC'
+        'orderby'     => 'menu_order',
+        'order' => 'ASC'
     );
 
     $child_pages = new WP_Query( $child_pages_query_args );
