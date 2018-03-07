@@ -32,8 +32,7 @@ h1 {
   font-family: DietDidot;
   font-weight: normal;
   font-style: normal;
-    font-size: 48px;
-
+  font-size: 48px;
   padding-top: 2px;
   text-align: right;
 }
@@ -44,11 +43,23 @@ h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
-.inside-header, .inside-page-header, .one-container .site-content, .separate-containers .comments-area, .separate-containers .inside-article, .separate-containers .page-header, .separate-containers .paging-navigation {
+.fl-rich-text h3 {
+    margin-bottom: 8px;
+}
+
+.inside-header,
+.inside-page-header,
+.one-container .site-content,
+.separate-containers .comments-area,
+.separate-containers .inside-article,
+.separate-containers .page-header,
+.separate-containers .paging-navigation {
     padding: 20px 0;
 }
 
-.entry-content, .entry-summary, .page-content {
+.entry-content,
+.entry-summary,
+.page-content {
     margin: 0;
 }
 
@@ -65,18 +76,45 @@ h2, h3, h4, h5, h6 {
 }
 
 /****** CONTAINERS ******/
+
+// defeat horizontal scrollbars when using neg margin
+#page {
+  overflow: hidden;
+}
+
 // beaver builder pages should allow 16px extra to compensate for module margins
-.page-id-275 #page { // contact page
+.page-template-beaver #page {
     max-width: 1312px;
 }
+
+// before-after page photos don't have 16px margins
+.page-template-beaver.page-id-265 #page {
+  max-width: 1280px;
+}
+
+.page-template-beaver.page-id-265 .entry-header h1 {
+    margin: 0;
+}
+
+.page-template-beaver .entry-header h1 {
+    margin: 0 16px;
+}
+
 .post-type-archive-testimonials #page {
     max-width: 1360px;
 }
+
 .post-type-archive-testimonials h1 {
     padding-right: 40px;
 }
+
 .masonry-container {
     margin-left: 0;
+}
+
+article#post-267 { // about
+    max-width: 1000px;
+    // margin: 0 auto;
 }
 
 /****** NAVIGATION ******/
@@ -141,7 +179,8 @@ h2, h3, h4, h5, h6 {
 .inside-navigation {
     // margin-right: -20px;
 }
-.main-navigation .main-nav ul li:last-of-type a, .main-navigation .main-nav ul li[class*="current-menu-"]:last-of-type > a {
+.main-navigation .main-nav ul li:last-of-type a,
+.main-navigation .main-nav ul li[class*="current-menu-"]:last-of-type > a {
     padding-right: 0;
 }
 
@@ -229,6 +268,10 @@ cite {
     font-style: normal;
 }
 
+.fl-rich-text p:last-of-type {
+  margin-bottom: 0;
+}
+
 /* RELATIONSHIPS */
 .page-id-273 .entry-title {
   display: none;
@@ -275,26 +318,25 @@ cite {
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1%;
   justify-content: center;
+  margin: 0 -1%;
+  width: 102% !important;
 }
 
 .links-to-projects {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .link-to-project,
 .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control {
-  flex-basis: 32%;
+  flex-basis: 31.333%;
   position: relative;
-  margin-bottom: 2%;
-  margin-right: 2%;
-  margin-left: 0;
+  margin: 1.4rem 1%; // use rem because FF collapses margins
 }
 
 .link-to-project:nth-child(3n),
 .theme-default .nivo-controlNav.nivo-thumbs-enabled a.nivo-control:nth-child(3n) {
-    margin-right: 0;
+    // margin-right: 0;
 }
 
 .link-to-project-img,
@@ -366,4 +408,8 @@ cite {
 .label-above .field-wrap .nf-field-label {
     font-size: .9em;
     margin-bottom: 0;
+}
+
+.credit {
+  @include font-size(15, 1.4);
 }
