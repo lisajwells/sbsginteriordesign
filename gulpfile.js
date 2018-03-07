@@ -38,7 +38,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php'],
-    proxy: 'http://sbsg.dev//',
+    proxy: 'http://sbsg.dev.cc//',
     // proxy: 'http://localhost:8888/wordpress/',
   });
   gulp.watch('./sass/**/*.scss', ['sass', reload]);
