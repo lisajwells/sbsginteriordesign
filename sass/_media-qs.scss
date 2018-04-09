@@ -14,6 +14,11 @@
     padding: 0 24px;
   }
 
+  .post-type-archive-testimonials #page {
+    max-width: 1280px;
+    padding-right: 20px;
+  }
+
   // before-after page should reach edge
   .page-template-beaver.page-id-265 #page {
     // max-width: 1360px;
@@ -22,6 +27,10 @@
 
   .page-template-beaver.page-id-265 .entry-header h1 {
     padding: 0 40px;
+  }
+
+  .post-type-archive-testimonials h1 {
+    padding-right: 20px;
   }
 
   .separate-containers .inside-article {
