@@ -25,5 +25,8 @@
   "browserslist": [
     "> 2%",
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
 }
