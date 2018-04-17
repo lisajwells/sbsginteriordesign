@@ -168,9 +168,9 @@ article#post-267 { // about
     padding-left: 30px;
     font-family: "AvenirLTStd-Light";
 }
-
-#menu-item-234 .sub-menu li:first-child a,
-#menu-item-234 .sub-menu li:last-child a {
+// add this selector when the Before and After page is published
+// #menu-item-234 .sub-menu li:last-child a
+#menu-item-234 .sub-menu li:first-child a {
     padding-left: 20px;
     font-family: "AvenirLTStd-Medium";
 }
