@@ -38,7 +38,7 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php'],
-    proxy: 'http://sbsg-interior-design.local//',
+    proxy: 'http://sbsg-interior-design.localcom//',
     //proxy: 'http://sbsg.dev.cc//',
     // proxy: 'http://localhost:8888/wordpress/',
   });
